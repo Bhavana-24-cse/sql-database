@@ -1,11 +1,10 @@
 import java.sql.*;
-class moviejava
+class movies1
 {
 public static void main(String args[])
 {
 try{
 Class.forName("com.mysql.cj.jdbc.Driver");
-System.out.println("Driver Loaded");
 Connection con = DriverManager.getConnection("jdbc:mysql://localhost/movies?","root","bhavana2001");
 Statement s = con.createStatement();
 String sq = "select * from movie";
